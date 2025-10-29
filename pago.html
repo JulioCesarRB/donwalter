@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Don Walter - Pago</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Coffee Shop" name="keywords">
+    <meta content="Coffee Shop Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">DON WALTER</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto p-4">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="productos.html" class="nav-item nav-link">Productos</a>
+                <a href="reportes.html" class="nav-item nav-link">Reportes</a>
+                <a href="inventario.html" class="nav-item nav-link">Inventario</a>
+                <a href="reserva.html" class="nav-item nav-link">Reservas</a>
+                <a href="pago.html" class="nav-item nav-link active">Pagos</a>                
+                <a href="pedidos.html" class="nav-item nav-link">Pedidos</a>
+                <a href="login.html" class="nav-item nav-link">Ingresar</a>
+            </div>
+        </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Pago Section Start -->
+    <div class="container-fluid py-5" style="background: linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.88)), url('img/bg.jpg') center/cover no-repeat;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="text-uppercase text-white"><i class="fa fa-credit-card mr-2" style="color:#DA9F5B;"></i>Opciones de Pago</h2>
+                <p class="text-white-50">Selecciona tu método de pago preferido y confirma tu pedido.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="bg-dark text-white rounded p-4 shadow-lg" style="border: 1px solid rgba(218,159,91,0.4);">
+                        <h4 class="text-uppercase mb-4" style="color:#DA9F5B;"><i class="fa fa-shopping-cart mr-2"></i>Resumen del Pedido</h4>
+                        <table class="table table-dark table-striped text-center mb-4">
+                            <thead>
+                                <tr style="color:#DA9F5B;">
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Unitario</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Café Premium 500g</td>
+                                    <td>2</td>
+                                    <td>$6.00</td>
+                                    <td>$12.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Capuchino Doble</td>
+                                    <td>1</td>
+                                    <td>$5.00</td>
+                                    <td>$5.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-right font-weight-bold" style="color:#DA9F5B;">Total a Pagar:</td>
+                                    <td style="color:#DA9F5B;">$17.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 class="text-uppercase mb-4" style="color:#DA9F5B;"><i class="fa fa-wallet mr-2"></i>Elige un método de pago</h5>
+
+                        <div class="row">
+                            <!-- Pago con Yape -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card bg-dark text-center border-0 shadow-sm" style="border:1px solid rgba(218,159,91,0.3);">
+                                    <div class="card-body">
+                                        <img src="img/yape.jpg" alt="Yape" class="mb-3" style="width:70px;">
+                                        <h6 class="text-white mb-2">Yape</h6>
+                                        <p class="text-white-50 small">Escanea el QR con Yape.</p>
+                                        <button class="btn btn-sm btn-outline-light" data-toggle="modal" data-target="#modalYape">Ver QR</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pago con Plin -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card bg-dark text-center border-0 shadow-sm" style="border:1px solid rgba(218,159,91,0.3);">
+                                    <div class="card-body">
+                                        <img src="img/plin.png" alt="Plin" class="mb-3" style="width:70px;">
+                                        <h6 class="text-white mb-2">Plin</h6>
+                                        <p class="text-white-50 small">Escanea el QR con Plin.</p>
+                                        <button class="btn btn-sm btn-outline-light" data-toggle="modal" data-target="#modalPlin">Ver QR</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pago en Efectivo -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card bg-dark text-center border-0 shadow-sm" style="border:1px solid rgba(218,159,91,0.3);">
+                                    <div class="card-body">
+                                        <i class="fa fa-money-bill-wave fa-3x mb-3" style="color:#DA9F5B;"></i>
+                                        <h6 class="text-white mb-2">Efectivo</h6>
+                                        <p class="text-white-50 small">Paga en caja al recoger tu pedido.</p>
+                                        <button class="btn btn-sm btn-outline-light">Seleccionar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-lg px-5 py-2 font-weight-bold" style="background-color:#DA9F5B; border:none; color:white;">
+                                Confirmar Pago <i class="fa fa-check ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="pedidos.html" class="text-white-50"><i class="fa fa-arrow-left mr-1"></i>Volver a Pedidos</a>
+            </div>
+        </div>
+    </div>
+    <!-- Pago Section End -->
+
+    <!-- Modal Yape -->
+    <div class="modal fade" id="modalYape" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-white text-center" style="border:1px solid #DA9F5B;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" style="color:#DA9F5B;">Pago con Yape</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Escanea este código QR con tu app Yape.</p>
+                    <img src="img/qr_yape.jpg" alt="QR Yape" style="width:200px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Plin -->
+    <div class="modal fade" id="modalPlin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-white text-center" style="border:1px solid #DA9F5B;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" style="color:#DA9F5B;">Pago con Plin</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Escanea este código QR con tu app Plin.</p>
+                    <img src="img/qr_plin.png" alt="QR Plin" style="width:200px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256,256,256,.1) !important;">
+            <p class="m-0 text-white">© 2025 Don Walter Café - Todos los derechos reservados</p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
