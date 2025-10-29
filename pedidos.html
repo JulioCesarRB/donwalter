@@ -23,6 +23,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -62,6 +63,10 @@
             <!-- Pedidos Realizados -->
             <div class="bg-dark text-white rounded p-4 mb-5 shadow-lg" style="border: 1px solid rgba(218,159,91,0.4);">
                 <h4 class="text-uppercase mb-4" style="color:#DA9F5B;"><i class="fa fa-check-circle mr-2"></i>Pedidos Realizados</h4>
+                 <button class="btn btn-lg" 
+                style="background-color:#DA9F5B; color:#1a1a1a; font-weight:600; border:none; border-radius:8px;">
+            <i class="fa fa-plus mr-2"></i>Agregar Pedido
+        </button>
                 <div class="table-responsive">
                     <table class="table table-dark table-striped text-center">
                         <thead>
@@ -91,6 +96,16 @@
                                 <td>$5.00</td>
                                 <td><span class="badge badge-success">Entregado</span></td>
                             </tr>
+                            <td>
+                        <button class="btn btn-sm" 
+                                style="background-color:transparent; border:1px solid #DA9F5B; color:#DA9F5B; border-radius:6px;">
+                            <i class="fa fa-edit mr-1"></i>Modificar
+                        </button>
+                        <button class="btn btn-sm ml-2" 
+                                style="background-color:transparent; border:1px solid #DA9F5B; color:#DA9F5B; border-radius:6px;">
+                            <i class="fa fa-trash mr-1"></i>Eliminar
+                        </button>
+                    </td>
                         </tbody>
                     </table>
                 </div>
@@ -128,6 +143,16 @@
                                 <td>$12.00</td>
                                 <td><span class="badge badge-warning text-dark">Pendiente</span></td>
                             </tr>
+                            <td>
+                        <button class="btn btn-sm" 
+                                style="background-color:transparent; border:1px solid #DA9F5B; color:#DA9F5B; border-radius:6px;">
+                            <i class="fa fa-edit mr-1"></i>Modificar
+                        </button>
+                        <button class="btn btn-sm ml-2" 
+                                style="background-color:transparent; border:1px solid #DA9F5B; color:#DA9F5B; border-radius:6px;">
+                            <i class="fa fa-trash mr-1"></i>Eliminar
+                        </button>
+                    </td>
                         </tbody>
                     </table>
                 </div>
