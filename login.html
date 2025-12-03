@@ -81,7 +81,11 @@
                 <div class="mt-4 text-white-50">
                     <p>¿No tienes una cuenta? <a href="registro.html" class="text-primary font-weight-bold">Regístrate</a></p>
                 </div>
-                <button href="login2.html" type="submit" class="btn btn-primary btn-block font-weight-bold py-3">Ingresar como Administrador</button>
+                <button type="button" onclick="loginAdmin()" class="btn btn-primary btn-block font-weight-bold py-3">
+    Ingresar como Administrador
+</button>
+<p id="mensajeAdmin" class="text-danger mt-3 font-weight-bold"></p>
+
             </div>
         </div>
     </div>
@@ -161,5 +165,19 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+<script>
+function loginAdmin() {
+    // Ventanas emergentes para ingresar usuario/contraseña
+    const user = prompt("Ingrese usuario de administrador:");
+    const pass = prompt("Ingrese contraseña:");
+
+    if (user === "admin" && pass === "admin") {
+        window.location.href = "dashboard.html"; 
+    } else {
+        document.getElementById("mensajeAdmin").innerText =
+            "❌ Usuario o contraseña de administrador incorrectos";
+    }
+}
+</script>
 
 </html>
